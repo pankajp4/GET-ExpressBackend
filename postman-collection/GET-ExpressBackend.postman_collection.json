@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "1aeb667e-db1e-4a54-888d-2f878bb22077",
+		"name": "GET-ExpressBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST: /fizzBuzz (single file implementation)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"count\": \"11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/fizzBuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"fizzBuzz"
+					]
+				},
+				"description": "FizzBuzz POST API"
+			},
+			"response": []
+		},
+		{
+			"name": "POST: /api/fizzBuzz",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHRVQtRXhwcmVzc0JhY2tlbmQiLCJuYW1lIjoiUGFua2FqIFBhbmRleSIsImlhdCI6MTUxNjIzOTAyMn0.t3P9f1ysZVJhnZYtxeXk0QzqHHgw3YLueoL7dXBSCmw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"count\": \"11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/fizzBuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"fizzBuzz"
+					]
+				},
+				"description": "FizzBuzz POST API"
+			},
+			"response": []
+		},
+		{
+			"name": "GET: /api/fizzBuzz",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHRVQtRXhwcmVzc0JhY2tlbmQiLCJuYW1lIjoiUGFua2FqIFBhbmRleSIsImlhdCI6MTUxNjIzOTAyMn0.t3P9f1ysZVJhnZYtxeXk0QzqHHgw3YLueoL7dXBSCmw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/fizzBuzz/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"fizzBuzz",
+						"11"
+					]
+				},
+				"description": "FizzBuzz POST API"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
