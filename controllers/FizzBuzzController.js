@@ -14,7 +14,7 @@ const auth = require("../middlewares/jwt");
 exports.fizzBuzzGet = [
 	auth,
 	check("count", "count should not be empty.").not().isEmpty(),
-	check("count", "count should be greater than 0.").isInt({ gt: 0 }),
+	check("count", "count should be an integer and greater than 0.").isInt({ gt: 0 }),
 	check("count", "count must be an integer.").isNumeric(),
 	check("count", "count must have length of 1 to 3 digit.").isLength({ min: 1, max: 3 }).trim(),
 	(req, res) => {
@@ -53,7 +53,7 @@ exports.fizzBuzzGet = [
 exports.fizzBuzzPost = [
 	auth,
 	check("count", "count should not be empty.").not().isEmpty(),
-	check("count", "count should be greater than 0.").isInt({ gt: 0 }),
+	check("count", "count should be an integer and greater than 0.").isInt({ gt: 0 }),
 	check("count", "count must be an integer.").isNumeric(),
 	check("count", "count must have length of 1 to 3 digit.").isLength({ min: 1, max: 3 }).trim(),
 	body("*").escape(),
