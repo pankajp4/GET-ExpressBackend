@@ -26,7 +26,7 @@ Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, FizzBuzz, 31, 32, Fizz, 34, Buzz, Fi
 This is a basic API skeleton written in NodeJs-Express framework.
 
 This project will run on **NodeJs** using **Express** as framework. I had tried to maintain the code
-structure easy to understand & maintain. There is another single file implementation as wee. Project
+structure easy to understand & maintain. There is another single file implementation as well. Project
 is open for suggestions & bugs can be reports as well.
 
 
@@ -73,7 +73,6 @@ npm install
 ```
 ## Project Structure
 ```sh
-.
 ├── fizzBuzzAPI.js (single file implementation with console log)
 ├── .env
 ├── .gitignore
@@ -146,7 +145,6 @@ Press CTRL + C to stop the process.
 ### Covered Test Cases
 
 ```sh
-.
 ├── Covered API test cases:
 │   └── /POST FizzBuzz - Authorization
 │   └── /POST FizzBuzz - Success
